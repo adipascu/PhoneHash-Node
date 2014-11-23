@@ -1,6 +1,7 @@
-//PhoneHash social media server
+//PhoneHash social network server
 //Hacked together for ALT Festival Brasov http://www.altbrasov.org/
 //a.pascu@rosoftlab.net
+//written in node.js
 //29.11.2014
 
 var express = require("express");
@@ -40,7 +41,7 @@ app.post("/test_push", function(req, res) {
 var storage = {};
 var subs = {}
 
-
+//Main API
 app.post("/messages", function(req, res) {
 
 	var message = req.body.message;
@@ -81,6 +82,8 @@ app.get("/messages", function(req, res) {
 	console.log(hash);
 });
 
+
+//Push notifications API
 app.post("/subscribe", function(req, res) {
 
 	var regId = req.body.regId;
@@ -144,9 +147,12 @@ app.post("/issubscribed", function(req, res) {
 	}
 });
 
+//serve itself
+app.get("/", function(req, res){
+	res.sendFile(__filename);
+});
 
-
-app.listen(6036);
+app.listen(process.env.PORT || 6036);
 
 //helper functions
 
