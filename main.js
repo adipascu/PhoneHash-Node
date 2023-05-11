@@ -159,3 +159,5 @@ function notifyChange(regId, hash, message) {
     console.log(arguments);
   });
 }
+
+console.log("Bird server started");
