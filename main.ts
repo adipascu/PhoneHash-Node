@@ -4,8 +4,13 @@
 import express from 'express'
 import bodyParser from 'body-parser';
 import os from 'node:os'
+import cors from 'cors'
 
 const app = express();
+
+// allow cross origin requests from all domains
+app.use(cors());
+
 app.use(
   bodyParser.urlencoded({
     extended: false,
