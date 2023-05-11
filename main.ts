@@ -3,6 +3,7 @@
 
 import express from 'express'
 import bodyParser from 'body-parser';
+import os from 'node:os'
 
 const app = express();
 app.use(
@@ -62,7 +63,9 @@ app.get("/", function (req, res) {
 
 const PORT = 3000
 
-app.listen(PORT);
+app.listen(PORT, () => {
+  console.log("Bird server started on http://" + os.hostname() + ":" + PORT + " 🚀");
+});
 
 //helper functions
 
@@ -80,5 +83,3 @@ function getHashArray(message: string) {
 
   return ret;
 }
-
-console.log("Bird server started on port " + PORT + "!");
