@@ -59,7 +59,10 @@ app.get("/", function (req, res) {
   res.sendFile(__filename);
 });
 
-app.listen(process.env.PORT || 6036);
+
+const PORT = 3000
+
+app.listen(PORT);
 
 //helper functions
 
@@ -78,4 +81,4 @@ function getHashArray(message: string) {
   return ret;
 }
 
-console.log("Bird server started");
+console.log("Bird server started on port " + PORT + "!");
