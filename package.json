@@ -7,7 +7,7 @@
     "dev": "nodemon"
   },
   "author": "Adi Pascu",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "body-parser": "^1.9.3",
     "express": "^4.10.2",

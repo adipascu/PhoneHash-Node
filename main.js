@@ -1,4 +1,5 @@
 //bird social network server
+//license: MIT (https://opensource.org/licenses/MIT)
 
 var express = require("express");
 var gcm = require("node-gcm");
