@@ -57,6 +57,7 @@ app.get("/messages", function (req, res) {
 
 //serve itself
 app.get("/", function (req, res) {
+  res.setHeader('Content-Type', 'text/x.typescript');
   res.sendFile(__filename);
 });
 
