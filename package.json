@@ -1,4 +1,7 @@
 {
+  "engines": {
+    "node": "16.15.0"
+  },
   "packageManager": "pnpm@8.5.0",
   "name": "bird-server",
   "version": "1.0.0",
