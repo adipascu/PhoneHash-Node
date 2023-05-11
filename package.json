@@ -14,7 +14,6 @@
   "dependencies": {
     "body-parser": "^1.9.3",
     "express": "^4.10.2",
-    "node-gcm": "^0.9.12",
     "nodemon": "^2.0.22"
   }
 }
