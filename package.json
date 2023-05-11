@@ -1,6 +1,6 @@
 {
   "packageManager": "pnpm@8.5.0",
-  "name": "PhoneHash_Server",
+  "name": "bird-server",
   "version": "1.0.0",
   "main": "main.js",
   "scripts": {

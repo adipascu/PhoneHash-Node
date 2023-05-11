@@ -1,8 +1,4 @@
-//PhoneHash social network server
-//Hacked together for ALT Festival Brasov http://www.altbrasov.org/
-//a.pascu@rosoftlab.net
-//written in node.js
-//29.11.2014
+//bird social network server
 
 var express = require("express");
 var gcm = require("node-gcm");
